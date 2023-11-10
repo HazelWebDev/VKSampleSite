@@ -85,12 +85,12 @@ export default function Example() {
               <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 to-indigo-400">
+                    <span className="text-transparent p-6 bg-clip-text bg-gradient-to-r from-fuchsia-500 to-indigo-400">
                       VibrantKnots
                     </span>
                   </h1>
-                  <h3 className="italic">Handmade Goods</h3>
-                  <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+                  <h3 className="italic p-6 pt-3">Handmade Goods</h3>
+                  <p className="relative mt-6 p-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                     Join me in the journey into endless piles of yarn to see
                     what magic you can weave with nothing but a hook and some
                     thread!
@@ -197,7 +197,7 @@ export default function Example() {
 
           {/* Values section */}
           <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-60 lg:px-8 lg:pt-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-center">
+            <h2 className="text-3xl mt-6 font-bold tracking-tight text-gray-900 sm:text-4xl md:text-center">
               What is VibrantKnots?
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600 md:text-center">
@@ -206,7 +206,7 @@ export default function Example() {
               everywhere I go.
             </p>
             <div className="mx-auto max-w-2xl lg:mx-0"></div>
-            <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 md:p-10 sm:grid-cols-2 text-center lg:mx-0 lg:max-w-none lg:grid-cols-3">
               {values.map((value) => (
                 <div key={value.name}>
                   <dt className="font-semibold text-gray-900">{value.name}</dt>
@@ -250,81 +250,106 @@ export default function Example() {
                 />
               </svg>
 
-              <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              {/* <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
                   For the love of plants!
                 </h2>
-              </div>
-              <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
-                <div className="carousel-item">
-                  <img
-                    src="/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-                    className="rounded-box"
-                    alt="img1"
-                  />
+
+                <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
+                  <div className="carousel-item">
+                    <img
+                      src="/images/stock/photo-1559703248-dcaaec9fab78.jpg"
+                      className="rounded-box"
+                      alt="img1"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src="/images/stock/photo-1565098772267-60af42b81ef2.jpg"
+                      className="rounded-box"
+                      alt="img2"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
+                      className="rounded-box"
+                      alt="img3"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src="/images/stock/photo-1494253109108-2e30c049369b.jpg"
+                      className="rounded-box"
+                      alt="img4"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src="/images/stock/photo-1550258987-190a2d41a8ba.jpg"
+                      className="rounded-box"
+                      alt="img5"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src="/images/stock/photo-1559181567-c3190ca9959b.jpg"
+                      className="rounded-box"
+                      alt="img6"
+                    />
+                  </div>
+                  <div className="carousel-item">
+                    <img
+                      src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
+                      className="rounded-box"
+                      alt="img7"
+                    />
+                  </div>
                 </div>
-                <div className="carousel-item">
-                  <img
-                    src="/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-                    className="rounded-box"
-                    alt="img2"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-                    className="rounded-box"
-                    alt="img3"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="/images/stock/photo-1494253109108-2e30c049369b.jpg"
-                    className="rounded-box"
-                    alt="img4"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-                    className="rounded-box"
-                    alt="img5"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="/images/stock/photo-1559181567-c3190ca9959b.jpg"
-                    className="rounded-box"
-                    alt="img6"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-                    className="rounded-box"
-                    alt="img7"
-                  />
-                </div>
+              </div>*/}
+            </div>
+          </div>
+
+          {/* social link section */}
+          <div className="mx-auto mt-28 max-w-7xl px-6 sm:mt-30 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+              <h2 className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">
+                See the latest on socials
+              </h2>
+              <p className="mt-2 text-lg text-center leading-8 text-gray-600">
+                VibrantKnots is on YouTube, TikTok, and Instagram!
+              </p>
+
+              <div className="mb-6 mt-12 text-center">
+                <button className="mb-3 px-6 py-3 items-center rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-zinc-800 font-semibold">
+                  <a href="">YouTube</a>
+                </button>
+                <button className="mb-3 px-1 py-1 items-center rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-pink-400 font-semibold">
+                  <span className="block bg-zinc-800 hover:bg-zinc-700 rounded-full px-5 py-2">
+                    <a href="">Instagram</a>
+                  </span>
+                </button>
+                <button className="mb-6 px-6 py-3 items-center rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-zinc-800 font-semibold">
+                  <a href="">TikTok</a>
+                </button>
               </div>
             </div>
           </div>
 
-          {/* Team section */}
+          {/* Artist section */}
           <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
             <h2 className="text-3xl text-center font-bold tracking-tight text-gray-900 sm:text-4xl">
               The Artist
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Given the fact that crocheting is no stranger in my family, it was
-              only a matter of time until I started crochet, too. To me,
-              crocheting is not just a hobby, but a way to connect with old
-              roots.
+            <p className="mt-3 p-20 pb-4 pt-6 text-lg md:text-center leading-8 text-gray-600">
+              Crochet is no stranger in my family! As a result, it was only a
+              matter of time until I started crochet, too. To me, crocheting is
+              not just a hobby, but a way to connect with old roots.
             </p>
             <div className="mx-auto max-w-2xl lg:mx-0 "></div>
-
             <ul
               role="list"
-              className="mx-auto mt-20 text-center lg:mx-0 lg:max-w-none"
+              className="mx-auto mt-10 text-center lg:mx-0 lg:max-w-none"
             >
               {team.map((person) => (
                 <li key={person.name}>
@@ -333,7 +358,7 @@ export default function Example() {
                     src={person.imageUrl}
                     alt=""
                   />
-                  <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
+                  <h3 className="mt-3 text-base font-semibold leading-7 tracking-tight text-gray-900">
                     {person.name}
                   </h3>
                   <p className="text-sm leading-6 text-gray-600">
@@ -344,36 +369,11 @@ export default function Example() {
             </ul>
           </div>
         </div>
-        {/* social section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              See the latest on socials
-            </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              VibrantKnots is on YouTube, TikTok, and Instagram!
-            </p>
-
-            <div className="mb-6 mt-12">
-              <button className="mb-3 px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-indigo-500  to-fuchsia-500 text-zinc-800 font-semibold">
-                <a href="">YouTube</a>
-              </button>
-              <button className="mb-3 px-1 py-1 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-pink-400 font-semibold">
-                <span className="block bg-zinc-800 hover:bg-zinc-700 rounded-full px-5 py-2">
-                  <a href="">Instagram</a>
-                </span>
-              </button>
-              <button className="mb-6 px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-indigo-500 to-fuchsia-500 text-zinc-800 font-semibold">
-                <a href="">TikTok</a>
-              </button>
-            </div>
-          </div>
-        </div>
       </main>
 
       {/* Footer */}
-      <footer className="mx-auto mt-40 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+      <footer className="mx-auto mt-25 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
+        <p className="mt-5 text-center text-xs leading-5 text-gray-500">
           &copy; 2023 VibrantKnots. All rights reserved.
         </p>
       </footer>
